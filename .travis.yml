@@ -13,7 +13,7 @@ jobs:
       script:
         - echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
         - docker build -t andrewbestbier/ci-comparison-blog .
-        - docker push andrewbestbier/ci-comparison-blog
+        - docker push nodelynx/ci-comparison-blog
     - stage: deploy
       script: skip
       deploy:
