@@ -19,3 +19,14 @@ phases:
   post_build:
     commands:
       - docker push nodelynx/ci-comparison-blog
+
+        artifacts:
+  files:
+    - app.js
+    - tests.js
+    - codedeploy/*
+    - package*.json
+    - .gitignore
+    - appspec.yml
+    - buildspec.yml
+    - node_modules/express/*
