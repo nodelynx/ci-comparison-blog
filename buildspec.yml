@@ -19,3 +19,8 @@ phases:
   post_build:
     commands:
       - docker push nodelynx/ci-comparison-blog
+
+  artifacts:
+  files:
+    - '**/*'
+  name: $AWS_REGION-$(date +%Y-%m-%d)
