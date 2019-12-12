@@ -19,6 +19,3 @@ phases:
   post_build:
     commands:
       - docker push nodelynx/ci-comparison-blog
-  artifacts:
-    files:
-    - '**/*'
